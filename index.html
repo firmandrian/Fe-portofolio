@@ -204,7 +204,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
     <script>
-      gsap.registerPlugin(TextPlugin);
+      //gsap.to (gsap akan menentukan patokan keadaan awal)
+      //gsap.from (gsap akan menentukan patokan keadaan akhir)
+      gsap.registerPlugin(TextPlugin);  // regisrasi Plugin 
       gsap.to(".lead", { duration: 2, delay: 1.5, text: "Mahasiswa | Junior Web Development" });
       gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
       gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
